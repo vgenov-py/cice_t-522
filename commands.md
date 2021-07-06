@@ -1,4 +1,4 @@
-# git commands
+### git commands
 
 1. git init
 2. git remote add origin <url>
