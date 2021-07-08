@@ -22,9 +22,7 @@ class Pokemon:
             if attack.element == remain_elements[0]:
                 self.HP -= attack.damage * 1.5
             else:
-                self.HP -= attack.damage * 0.5
-
-        
+                self.HP -= attack.damage * 0.5       
 
 class Attack:
     def __init__(self, name, element, damage):
@@ -42,20 +40,14 @@ charmander = Pokemon("Charmander", elements[0], 120)
 squirtle = Pokemon("Squirtle", elements[2], 140)
 bulbasaur = Pokemon("Bulbasaur", elements[1], 160)
 
+
 flamethrower = Attack("Flamethrower", elements[0], 40)
 razor_leaf = Attack("Razor leaf", elements[1], 25)
-surf = Attack("Surf", elements[2], 35)
+surf = Attack("Surf", elements[2], 3)
 
 charmander.learn(flamethrower)
-charmander.learn(razor_leaf)
-charmander.learn(surf)
+bulbasaur.learn(razor_leaf)
+squirtle.learn(surf)
 
-print(bulbasaur)
-for i, attack in enumerate(charmander.attacks):
-    print(f"{i + 1}. {attack}")
-
-user = int(input("Choose: "))
-bulbasaur.receive_damage(charmander.attacks[user - 1])
-print(bulbasaur)
-
+pokemons = [charmander, squirtle, bulbasaur]
 
