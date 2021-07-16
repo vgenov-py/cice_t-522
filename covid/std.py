@@ -43,7 +43,7 @@ class Statistics:
 
     @property
     def B(self):
-        return self.rxy / ((self.y_var ** 0.5) / (self.x_var ** 0.5))
+        return self.rxy * ((self.y_var ** 0.5) / (self.x_var ** 0.5))
     
     @property
     def B0(self):
