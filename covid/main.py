@@ -1,7 +1,9 @@
-import requests as req
+# import requests as req
 import json
 import os
 import time
+from std import Statistics
+import matplotlib.pyplot as plt
 
 cwd = os.path.dirname(__file__)
 cct = "casos_confirmados_totales"
@@ -33,9 +35,6 @@ def get_total(dataset, date):
 
 finish = time.perf_counter()
 
-# print(get_total(data, "2020/02/26"))
-# print(finish - start)
-
 def get_worst(dataset):
     filtered_list = []
     for mun in dataset:
@@ -60,7 +59,7 @@ for mun in data:
     except KeyError:
         continue
 
-start = time.perf_counter()
+# start = time.perf_counter()
 
 def create_y(dataset):
     result = {}
@@ -80,17 +79,48 @@ def create_y(dataset):
                 continue
     return result
 
-finish = time.perf_counter()
 
-print(finish-start)
 Y =create_y(data)
-print(list(Y.keys()))
-# print(data[-1][fi].split(" ")[0])
-# print(Y["2020/02/26"])
+Y = dict(sorted(Y.items(), key= lambda tupla: tupla[0]))
+
+dates = list(Y.keys())
+Y = list(Y.values())
+X = [num for num in range(1, len(Y) + 1)]
+
+
+covid_data = Statistics(X, Y)
+covid_data.rxy + 2
+
+Y_until65 = Y[:66]
+X_until65 = [num for num in range(1, len(Y_until65) + 1)]
+# plt.plot(X_until65, Y_until65)
+# plt.ylabel("confirmados")
+# plt.xlabel("dias")
+# plt.show()
+
+Y_after65 = Y[66:]
+X_after65 = [num for num in range(67, len(Y) + 1)]
+
+after65 = Statistics(X_after65, Y_after65)
+print(after65.rxy)
+print(after65.prediction(137))
+
+plt.plot(X_after65, Y_after65)
+plt.ylabel("confirmados")
+plt.xlabel("dias")
+plt.show()
 
 
 
 
+
+
+
+
+# plt.plot(X, Y)
+# plt.ylabel("confirmados")
+# plt.xlabel("dias")
+# plt.show()
 
 
 
