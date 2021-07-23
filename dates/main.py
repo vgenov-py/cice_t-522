@@ -1,9 +1,9 @@
 import datetime
 import os
 
-CWD = os.path.dirname(__file__)
-print(CWD)
-today = datetime.date(2021, 7, 20)
+# CWD = os.path.dirname(__file__)
+# print(CWD)
+# today = datetime.date(2021, 7, 20)
 # ten_days = datetime.timedelta(days = 20,)
 # print(today + ten_days)
 
@@ -32,6 +32,22 @@ today = datetime.date(2021, 7, 20)
 # date_1 = datetime.date(dec_user_date[0], dec_user_date[1], dec_user_date[2])
 # print(date_1)
 
-with open(f"{CWD}/historico.log", "a", encoding="utf8") as file:
-    "datetime | status_code | msg | if err "
-    file.write(f"{datetime.datetime.today()} | 200 | user post |\n")
+# with open(f"{CWD}/historico.log", "a", encoding="utf8") as file:
+#     "datetime | status_code | msg | if err "
+#     file.write(f"{datetime.datetime.today()} | 200 | user post |\n")
+
+user_date = "2020-10-10"
+user_date = datetime.date.today().isoformat()
+print(type(user_date))
+
+"contraseña"
+47 / 2
+23  --> "g"
+
+"ontraseñag"
+
+t --> 85
+
+85 * 3
+
+"ontra255eñag"

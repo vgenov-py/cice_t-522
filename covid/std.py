@@ -1,6 +1,8 @@
 class Statistics:
     def __init__(self, x, y):
-        self.x = x if type(x) == list else []
+        if type(x) != list or type(y) != list:
+            raise Exception("The only accepted values for x and y are lists")
+        self.x = x
         self.y = y if type(y) == list else []
 
     def __str__(self):
@@ -52,7 +54,9 @@ class Statistics:
     def prediction(self, value):
         return (self.B * value) + self.B0 
 
-test = Statistics([1,2,3], [4, 5, 6])
-print(test.prediction(5))
-def hola():
-    return "Hola!"
+# test = Statistics([1,2,3], [4, 5, 6])
+# print(test.prediction(5))
+# def hola():
+#     return "Hola!"
+# test = Statistics([1],2)
+# print(test.x)
