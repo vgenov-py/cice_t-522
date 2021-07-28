@@ -27,8 +27,19 @@
         },
         {
             "name": "test",
-            "pwd": "$2b$12$2GgulQAcK7ncppJ1OGCuV.cLxBODOeqRSr7R/cqOfheiL5GmCWjy2",
+            "pwd": "$2b$12$cWMU1x4VVf3M7ICrp/QA0.TQ8zz.DnRh9MoWcIKWRKi/oDVrkfoRq",
+            "token": "$2b$12$lz9Tt3HgxGLQif0os9CMk.q9jkMPWAtAV5TeWAPBZIA8tFNKtsVnW",
             "user_since": "2021-07-22"
+        },
+        {
+            "name": "dea",
+            "pwd": "$2b$12$1xw.kTAaMTvucYwOR1Y.T.skAg/zobBjmVcRdrLhwBzyaqGktwb4W",
+            "user_since": "2021-07-23"
+        },
+        {
+            "name": "testDEA",
+            "pwd": "$2b$12$YrlcShgvkyJqIXQ.vRW2IevdoNPxcoINRWK4t6fD1gxnSISF/.Agi",
+            "user_since": "2021-07-23"
         }
     ]
 }
