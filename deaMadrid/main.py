@@ -22,7 +22,7 @@ data = funcs.get_data(f"{CWD}/deas.json")
 user = "0"
 while user != "q":
     funcs.menu()
-    user = input("Choose: ")
+    user = input("Choose: ") 
     if user == "1":
         auth.auth()
     elif user == "2":
@@ -32,6 +32,10 @@ while user != "q":
             user_x, user_y = funcs.menu_by_position()
             nearest = funcs.get_nearest(data["data"], user_x, user_y)
             print(nearest)
+        elif user == "3": # Update DEA
+            print("Hi!")
+            if auth.validation():
+                print("now you can modify some DEA")
 
 
 

@@ -13,6 +13,7 @@ def get_private(dataset):
 def menu():
     print("1. Users")
     print("2. DEA finder")
+    print("Q. Quit")
 
 def menu_dea():
     print("1. DEA by code")

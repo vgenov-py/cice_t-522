@@ -1,0 +1,45 @@
+{
+    "data": [
+        {
+            "name": "test-1",
+            "pwd": "$2b$12$vVmCUMp2e8Ll5kl.W3j3Bea10DY49X1LMTPzcdODoEEyEBBk.k45u",
+            "user_since": "2021-07-21"
+        },
+        {
+            "name": "test-2",
+            "pwd": "$2b$12$vVmCUMp2e8Ll5kl.W3j3Bea10DY49X1LMTPzcdODoEEyEBBk.k45u",
+            "user_since": "2021-07-21"
+        },
+        {
+            "name": "un nuevo usuario",
+            "pwd": "$2b$12$vVmCUMp2e8Ll5kl.W3j3Bea10DY49X1LMTPzcdODoEEyEBBk.k45u",
+            "user_since": "2021-07-22"
+        },
+        {
+            "name": "123",
+            "pwd": "$2b$12$vVmCUMp2e8Ll5kl.W3j3Bea10DY49X1LMTPzcdODoEEyEBBk.k45u",
+            "user_since": "2021-07-22"
+        },
+        {
+            "name": "bcrypt",
+            "pwd": "$2b$12$aKJ8c9KWxp/6MZjtbx9uYuM4pzJq3crhYK6YGzQx2VNStmUKQnVr6",
+            "user_since": "2021-07-22"
+        },
+        {
+            "name": "test",
+            "pwd": "$2b$12$cWMU1x4VVf3M7ICrp/QA0.TQ8zz.DnRh9MoWcIKWRKi/oDVrkfoRq",
+            "token": "$2b$12$lz9Tt3HgxGLQif0os9CMk.q9jkMPWAtAV5TeWAPBZIA8tFNKtsVnW",
+            "user_since": "2021-07-22"
+        },
+        {
+            "name": "dea",
+            "pwd": "$2b$12$1xw.kTAaMTvucYwOR1Y.T.skAg/zobBjmVcRdrLhwBzyaqGktwb4W",
+            "user_since": "2021-07-23"
+        },
+        {
+            "name": "testDEA",
+            "pwd": "$2b$12$YrlcShgvkyJqIXQ.vRW2IevdoNPxcoINRWK4t6fD1gxnSISF/.Agi",
+            "user_since": "2021-07-23"
+        }
+    ]
+}
