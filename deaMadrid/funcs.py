@@ -1,4 +1,5 @@
 import json
+import utm
 
 def get_data(dataset):
 	with open(dataset, encoding="utf8") as file:
@@ -21,8 +22,8 @@ def menu_dea():
     print("3. DEA update")
 
 def menu_by_position():
-    x = int(input("X:"))
-    y = int(input("Y:"))
+    x = int(input("Lat:"))
+    y = int(input("Long:"))
     return (x,y)
 
 
@@ -50,4 +51,4 @@ def get_nearest(dataset, user_x, user_y):
         distance = dea_object.distance(user_x, user_y)
         result[distance] = dea
     # a comment
-    return sorted(result.items(), key=lambda dea: dea[0])[0:2]
+    return sorted(result.items(), key=lambda dea: dea[0])[0]
