@@ -2,7 +2,7 @@ import json
 import os
 
 CWD = os.path.dirname(__file__)
-
+# a comment
 class Auth:
     def __init__(self, db_path):
         if type(db_path) != str:
